@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
-    --cor-principal: hsl(47, 88%, 63%);
-    --cor-texto: hsl(0, 0%, 42%);
+    --primary-color: hsl(47, 88%, 63%);
+    --text-color: hsl(0, 0%, 42%);
 }
 
 .background {
-    background-color: var(--cor-principal);
+    background-color: var(--primary-color);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
 }
 
 .card .highlight {
-    background-color: var(--cor-principal);
+    background-color: var(--primary-color);
     width: 70px;
     padding: 5px 6px;
     border-radius: 3px;
@@ -60,12 +60,18 @@
     font-size: 20px;
     font-weight: 900;
     margin-top: 18px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card .title:hover {
+    color: var(--primary-color);
 }
 
 .card .text {
     font-size: 15px;
     margin-top: 15px;
-    color: var(--cor-texto);
+    color: var(--text-color);
     font-weight: 500;
 }
 
