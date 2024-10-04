@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+    --cor-principal: hsl(47, 88%, 63%);
+    --cor-texto: hsl(0, 0%, 42%);
+}
+
+.background {
+    background-color: var(--cor-principal);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.card {
+    background-color: #fff;
+    width: 340px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 8px 8px 1px #000;
+}
+
+.card *:not(.image, img, .name) {
+    margin-left: 25px;
+}
+
+.card .image {
+    display: flex;
+    justify-content: center;
+}
+
+.card .image img {
+    margin-top: 20px;
+    width: 295px;
+    border-radius: 8px;
+}
+
+.card .highlight {
+    background-color: var(--cor-principal);
+    width: 70px;
+    padding: 5px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.card .publication-date {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card .title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 18px;
+}
+
+.card .text {
+    font-size: 15px;
+    margin-top: 15px;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+.card .info {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.card .info img {
+    width: 34px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.card .name {
+    font-size: 13px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+}
